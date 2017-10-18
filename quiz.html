@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Search</title>
+        <link rel="stylesheet" media="screen" href="style.css">
+            
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dallin Frank">
+        <meta name="description" content="The portfolio website I made for BYU C S 260">
+        <meta name="robots" content="all">
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="searchUtility.js"></script>
+    </head>
+    
+    <body onload="initialize()">
+        <div id="map"></div>
+         <div align="center">
+           <br>
+           <input id="weatherButton" class="button" type="button" value="Random Location">
+            
+          </div>
+          <br>  
+             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMuYIbsBcPGYLiZMrApIgBTTSD9cOd6Y&callback=initMap" async defer></script>
+             <p1><p2><p>Current Weather</p></p2>
+            <section id="overall">
+                <div id="weather">No weather</div>
+                <section id="imgHere">
+
+                </section>
+            </section>
+            </p1>
+        </body>
+
+</html>
