@@ -14,7 +14,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
 
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="searchUtility.js"></script>
+        <script src="quiz.js"></script>
     </head>
     <body ng-app="Quiz">
         <div class="row">
@@ -24,19 +24,25 @@
         </div>
       
         <!--<script type="text/ng-template" id="/questions.html">-->
-            <div class="page-header">
-                <h3>{{question.title}}</h3>
+            <div ng-controller='testCtrl'>
+                <div class="page-header">
+                    <h3>{{questions[questionNumber].title}}</h3>
+                </div>
+        
+                <div class="content">
+                    <form ng-submit='addPoints()'>
+                        <ul class="answers">
+                            <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 0"><label for="q10">{{questions[questionNumber].responses[0].text}}</label><br/>
+                            <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 1"><label for="q10">{{questions[questionNumber].responses[1].text}}</label><br/>
+                            <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 2"><label for="q10">{{questions[questionNumber].responses[2].text}}</label><br/>
+                            <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 3"><label for="q10">{{questions[questionNumber].responses[3].text}}</label><br/>
+                            <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 4"><label for="q10">{{questions[questionNumber].responses[4].text}}</label><br/>
+                            <input type="submit">
+                        </ul>
+                    </form>
+                </div>
             </div>
-
-            <div class="content">
-                <form ng-controller='testForm' ng-submit='addPoints()'>
-                    <ul class="answers">
-                        <input type="radio" name="q1" value="0" id="q1a" ng-click="currentSelection = 0"><label for="q10">{{question.responseArray.indexOf(0).text}}</label><br/>
-                        <input type="submit">
-                    </ul>
-                </form>
-
-            </div>
+            
         <!--</script>-->
 
         <!--<script type="text/ng-template" id="/results.html">-->
