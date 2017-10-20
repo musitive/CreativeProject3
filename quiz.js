@@ -220,24 +220,24 @@ function($scope, resultFactory) {
             title: "How do you respond in the affimative?",
             responses: [
                 {
-                    text: "Don't Know",
+                    text: "ok",
                     points: 8
                 },
                 {
-                    text: "Me too thanks",
+                    text: "k",
                     points: 6
                 },
                 {
-                    text: "Go to Institute",
+                    text: "kk",
                     points: 4
                 },
                 {
-                    text: "Hit up the club",
+                    text: "Okay",
                     points: 2
                 },
                 {
-                    text: "Watch TV",
-                    points: 0
+                    text: "Potassium",
+                    points: 8
                 }
             ]
         },
