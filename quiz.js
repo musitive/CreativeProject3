@@ -84,6 +84,8 @@ function($stateProvider, $urlRouterProvider) {
 '$scope',
 'resultFactory',
 function($scope, resultFactory) {
+    $scope.continue = "Continue";
+    $scope.link = "#/questions";
     $scope.index = 0;
     $scope.currentSelection = 0;
     $scope.questionNumber = 0;
@@ -346,6 +348,13 @@ function($scope, resultFactory) {
     }
     $scope.nextQuestion = function() {
         $scope.questionNumber++;
+        if($scope.questionNumber == 9) {
+            $scope.continue = "Finish";
+        }
+        if($scope.questionNumber == 10) {
+            $scope.link = "#/results";
+            $scope.computeResults();
+        }
     }
 
     $scope.addPoints = function() {
