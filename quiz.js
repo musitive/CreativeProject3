@@ -24,6 +24,51 @@ function($stateProvider, $urlRouterProvider) {
                 title: "Sudan",
                 imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
                 description: "Hello There"
+            },
+            {
+                title: "Minivan",
+                imgUrl: "https://cars.usnews.com/dims4/USNEWS/a26bd14/2147483647/resize/640x420%3E/format/jpeg/quality/85/?url=https%3A%2F%2Fcars.usnews.com%2Fstatic%2Fimages%2Farticle%2F201704%2F126811%2F6_CAR15SedonaSoulEV298_640x420.jpg",
+                description: "Hello There"
+            },
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
+            },
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
+            },
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
+            },
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
+            },
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
+            },
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
+            },
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
+            },
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
             }
         ]
     };
@@ -304,5 +349,5 @@ function($scope) {
     '$scope',
     'resultFactory',
     function($scope, resultFactory) {
-        $scope.result = resultFactory.results[0];
+        $scope.result = resultFactory.results[1];
 }]);
