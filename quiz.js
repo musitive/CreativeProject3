@@ -286,29 +286,3 @@ function($stateProvider, $urlRouterProvider) {
         $scope.nextQuestion();       
     };
 })
-
-
-/*
-[
-    {
-        imgUrl: "",
-        title: "",
-        desc: ""
-    },
-    ...
-]
-
-[
-    {
-        title: "",
-        [
-            {
-                text: "",
-                points: 0
-            }
-            ...
-        ]
-    },
-    ...
-]
-*/
