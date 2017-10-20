@@ -19,6 +19,7 @@ function($stateProvider, $urlRouterProvider) {
 }])
 .factory('resultFactory', [function(){
     var o = {
+        index: 0,
         results: [
             {
                 title: "You are a Sedan!",
@@ -81,7 +82,9 @@ function($stateProvider, $urlRouterProvider) {
 }])
 .controller('testCtrl', [
 '$scope',
-function($scope) {
+'resultFactory',
+function($scope, resultFactory) {
+    $scope.index = 0;
     $scope.currentSelection = 0;
     $scope.questionNumber = 0;
     $scope.totalPoints = 0;
@@ -338,6 +341,9 @@ function($scope) {
         }
     ];
 
+    $scope.computeResults = function() {
+        resultFactory.index = Math.floor($scope.totalPoints/8);
+    }
     $scope.nextQuestion = function() {
         $scope.questionNumber++;
     }
@@ -353,5 +359,6 @@ function($scope) {
     '$scope',
     'resultFactory',
     function($scope, resultFactory) {
-        $scope.result = resultFactory.results[0];
+        $scope.result = resultFactory.results[resultFactory.index];
+        console.log(resultFactory.index);
 }]);
