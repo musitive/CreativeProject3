@@ -15,7 +15,7 @@ function($stateProvider, $urlRouterProvider) {
             controller: 'resultCtrl'
         });
 
-    $urlRouterProvider.otherwise('questions');
+    $urlRouterProvider.otherwise('results');
 }])
 .factory('resultFactory', [function(){
     var o = {
