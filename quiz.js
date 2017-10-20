@@ -89,7 +89,7 @@ function($stateProvider, $urlRouterProvider) {
                 },
                 {
                     text: "Nokia",
-                    points: 2
+                    points: 4
                 },
                 {
                     text: "Android/iPhone",
@@ -98,7 +98,57 @@ function($stateProvider, $urlRouterProvider) {
             ]
         },
         {
-            title: "What are you most likely to do on a Saturday night?",
+            title: "What is your general approach to group projects?",
+            responses: [
+                {
+                    text: "Abandon the project",
+                    points: 2
+                },
+                {
+                    text: "Work hard and finish",
+                    points: 0
+                },
+                {
+                    text: "Start a new project before finishing the previous one",
+                    points: 4
+                },
+                {
+                    text: "Constantly come up with new ideas without ever completing the assignment",
+                    points: 6
+                },
+                {
+                    text: "Withdraw from the class",
+                    points: 8
+                }
+            ]
+        },
+        {
+            title: "Which is proper?",
+            responses: [
+                {
+                    text: "whom",
+                    points: 2
+                },
+                {
+                    text: "whomst'd've",
+                    points: 8
+                },
+                {
+                    text: "who",
+                    points: 0
+                },
+                {
+                    text: "whomst",
+                    points: 4
+                },
+                {
+                    text: "whomst'd",
+                    points: 6
+                }
+            ]
+        },
+        {
+            title: "How do you respond in the affimative?",
             responses: [
                 {
                     text: "Don't Know",
@@ -123,7 +173,7 @@ function($stateProvider, $urlRouterProvider) {
             ]
         },
         {
-            title: "What are you most likely to do on a Saturday night?",
+            title: "Who is your most favorite actor?",
             responses: [
                 {
                     text: "Don't Know",
@@ -148,51 +198,76 @@ function($stateProvider, $urlRouterProvider) {
             ]
         },
         {
-            title: "What are you most likely to do on a Saturday night?",
+            title: "What do you look for in a TV show?",
             responses: [
                 {
-                    text: "Don't Know",
-                    points: 0
+                    text: "To be fair...",
+                    points: 8
                 },
                 {
-                    text: "Me too thanks",
-                    points: 2
-                },
-                {
-                    text: "Go to Institute",
-                    points: 4
-                },
-                {
-                    text: "Hit up the club",
+                    text: "A good fanbase/community",
                     points: 6
                 },
                 {
-                    text: "Watch TV",
-                    points: 8
+                    text: "An interesting plot",
+                    points: 0
+                },
+                {
+                    text: "Attractive actors/actresses",
+                    points: 2
+                },
+                {
+                    text: "Good cinematography",
+                    points: 4
                 }
             ]
         },
         {
-            title: "What are you most likely to do on a Saturday night?",
+            title: "How do you pronounce '11'?",
             responses: [
                 {
-                    text: "Don't Know",
-                    points: 0
-                },
-                {
-                    text: "Me too thanks",
+                    text: "one one",
                     points: 2
                 },
                 {
-                    text: "Go to Institute",
-                    points: 4
-                },
-                {
-                    text: "Hit up the club",
+                    text: "oneteen",
                     points: 6
                 },
                 {
-                    text: "Watch TV",
+                    text: "ten-one",
+                    points: 4
+                },
+                {
+                    text: "onety-one",
+                    points: 8
+                },
+                {
+                    text: "eleven",
+                    points: 0
+                }
+            ]
+        },
+        {
+            title: "And finally, what day is it my dudes?",
+            responses: [
+                {
+                    text: "Thursday",
+                    points: 0
+                },
+                {
+                    text: "Friday",
+                    points: 0
+                },
+                {
+                    text: "Monday",
+                    points: 0
+                },
+                {
+                    text: "Tuesday",
+                    points: 0
+                },
+                {
+                    text: "Wednesday",
                     points: 8
                 }
             ]
