@@ -5,19 +5,34 @@ angular.module('Quiz', ['ui.router'])
 function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('questions', {
-            url: '/questions/{id}',
+            url: '/questions',
             templateUrl: '/questions.html',
-            controller: 'QuestionsCtrl'
+            controller: 'testCtrl'
         })
         .state('results', {
-            url: '/results/{id}',
+            url: '/results',
             templateUrl: '/results.html',
-            controller: 'ResultsCtrl'
+            controller: 'resultCtrl'
         });
 
-    $urlRouterProvider.otherwise('questions');
+    $urlRouterProvider.otherwise('results');
 }])
-.controller('testCtrl', function($scope) {
+.factory('resultFactory', [function(){
+    var o = {
+        results: [
+            {
+                title: "Sudan",
+                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
+                description: "Hello There"
+            }
+        ]
+    };
+    return o;
+}])
+.controller('testCtrl', [
+'$scope',
+function($scope) {
+    $scope.nextPage = "";
     $scope.currentSelection = 0;
     $scope.questionNumber = 0;
     $scope.totalPoints = 0;
@@ -152,11 +167,11 @@ function($stateProvider, $urlRouterProvider) {
             responses: [
                 {
                     text: "Don't Know",
-                    points: 0
+                    points: 8
                 },
                 {
                     text: "Me too thanks",
-                    points: 2
+                    points: 6
                 },
                 {
                     text: "Go to Institute",
@@ -164,35 +179,35 @@ function($stateProvider, $urlRouterProvider) {
                 },
                 {
                     text: "Hit up the club",
-                    points: 6
+                    points: 2
                 },
                 {
                     text: "Watch TV",
-                    points: 8
+                    points: 0
                 }
             ]
         },
         {
-            title: "Who is your most favorite actor?",
+            title: "Who is your most favorite actor/actress?",
             responses: [
                 {
-                    text: "Don't Know",
-                    points: 0
-                },
-                {
-                    text: "Me too thanks",
-                    points: 2
-                },
-                {
-                    text: "Go to Institute",
+                    text: "K. Reeves",
                     points: 4
                 },
                 {
-                    text: "Hit up the club",
+                    text: "H. Christensen",
                     points: 6
                 },
                 {
-                    text: "Watch TV",
+                    text: "J. Lawrence",
+                    points: 0
+                },
+                {
+                    text: "J. Depp",
+                    points: 2
+                },
+                {
+                    text: "T. Hanks",
                     points: 8
                 }
             ]
@@ -273,7 +288,6 @@ function($stateProvider, $urlRouterProvider) {
             ]
         }
     ];
-    //$scope.currentQuestion = questions[0].title;
 
     $scope.nextQuestion = function() {
         $scope.questionNumber++;
@@ -285,4 +299,10 @@ function($stateProvider, $urlRouterProvider) {
         console.log("Total Points: " + $scope.totalPoints);
         $scope.nextQuestion();       
     };
-})
+}])
+.controller('resultCtrl', [
+    '$scope',
+    'resultFactory',
+    function($scope, resultFactory) {
+        $scope.result = resultFactory.results[0];
+}]);

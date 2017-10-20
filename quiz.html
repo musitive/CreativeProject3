@@ -23,8 +23,8 @@
             </div>
         </div>
       
-        <!--<script type="text/ng-template" id="/questions.html">-->
-            <div ng-controller='testCtrl'>
+        <script type="text/ng-template" id="/questions.html">
+            <div>
                 <div class="page-header">
                     <h3>{{questions[questionNumber].title}}</h3>
                 </div>
@@ -37,15 +37,17 @@
                             <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 2"><label for="q10">{{questions[questionNumber].responses[2].text}}</label><br/>
                             <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 3"><label for="q10">{{questions[questionNumber].responses[3].text}}</label><br/>
                             <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 4"><label for="q10">{{questions[questionNumber].responses[4].text}}</label><br/>
-                            <input class = "button" type="submit">
                         </ul>
+                        <div class="pls">
+                            <input class = "button" type="submit" ng-href="{{nextPage}}">
+                        </div>
                     </form>
                 </div>
             </div>
             
-        <!--</script>-->
+        </script>
 
-        <!--<script type="text/ng-template" id="/results.html">-->
+        <script type="text/ng-template" id="/results.html">
             <div class="page-header">
                 <h3>
                     {{result.title}}
@@ -56,7 +58,7 @@
                 <img ng-src="{{result.imgUrl}}" id="resultImg"/>
                 {{result.description}}
             </div>
-        <!--</script>-->
+        </script>
     </body>
 
 </html>
