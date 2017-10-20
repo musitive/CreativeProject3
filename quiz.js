@@ -221,7 +221,7 @@ function($scope, resultFactory) {
             responses: [
                 {
                     text: "ok",
-                    points: 8
+                    points: 0
                 },
                 {
                     text: "k",
