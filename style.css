@@ -17,6 +17,14 @@ input[type='radio'] {
     height: 4em;
 }
 
+.images {
+	text-align: center;
+}
+
+#resultImg {
+	height: 350px;
+}
+
 .answers {
     color: black;
     font-family: sans-serif;
@@ -27,7 +35,11 @@ input[type='radio'] {
 }
 
 .pls {
-    text-align: center;
+	text-align: center;
+}
+
+.button {
+	margin:1em;
 }
 
 body {
