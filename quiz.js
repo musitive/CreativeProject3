@@ -77,7 +77,6 @@ function($stateProvider, $urlRouterProvider) {
 .controller('testCtrl', [
 '$scope',
 function($scope) {
-    $scope.nextPage = "";
     $scope.currentSelection = 0;
     $scope.questionNumber = 0;
     $scope.totalPoints = 0;
@@ -342,12 +341,12 @@ function($scope) {
         $scope.totalPoints += $scope.questions[$scope.questionNumber].responses[$scope.currentSelection].points;
         console.log("Current Selection Points: " + $scope.questions[$scope.questionNumber].responses[$scope.currentSelection].points);
         console.log("Total Points: " + $scope.totalPoints);
-        $scope.nextQuestion();       
+        $scope.nextQuestion();
     };
 }])
 .controller('resultCtrl', [
     '$scope',
     'resultFactory',
     function($scope, resultFactory) {
-        $scope.result = resultFactory.results[1];
+        $scope.result = resultFactory.results[0];
 }]);
