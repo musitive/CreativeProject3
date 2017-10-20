@@ -4,6 +4,10 @@ angular.module('Quiz', ['ui.router'])
 '$urlRouterProvider',
 function($stateProvider, $urlRouterProvider) {
     $stateProvider
+        .state('home', {
+            url: '/home',
+            templateUrl: '/home.html',
+        })
         .state('questions', {
             url: '/questions',
             templateUrl: '/questions.html',
@@ -15,7 +19,7 @@ function($stateProvider, $urlRouterProvider) {
             controller: 'resultCtrl'
         });
 
-    $urlRouterProvider.otherwise('results');
+    $urlRouterProvider.otherwise('home');
 }])
 .factory('resultFactory', [function(){
     var o = {
