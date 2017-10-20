@@ -21,7 +21,7 @@ function($stateProvider, $urlRouterProvider) {
     var o = {
         results: [
             {
-                title: "Sudan",
+                title: "Sedan",
                 imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
                 description: "Hello There"
             },

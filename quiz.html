@@ -6,8 +6,7 @@
         <link rel="stylesheet" media="screen" href="style.css">
             
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Dallin Frank">
-        <meta name="description" content="The portfolio website I made for BYU C S 260">
+        <meta name="author" content="Dallin Frank and Luke Summers">
         <meta name="robots" content="all">
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
@@ -39,7 +38,8 @@
                             <input type="radio" name="q1" id="q1a" ng-click="currentSelection = 4"><label for="q10">{{questions[questionNumber].responses[4].text}}</label><br/>
                         </ul>
                         <div class="pls">
-                            <input class="button" type="submit">
+                            <input class="button" type="submit" value="Continue">
+                            <a ng-click="computeResults()" ng-href="#/results.html" class="button">Finish</a>
                         </div>
                     </form>
                 </div>
@@ -54,7 +54,7 @@
                 </h3>
             </div>
 
-            <div class="content">
+            <div class="images">
                 <img ng-src="{{result.imgUrl}}" id="resultImg"/>
                 {{result.description}}
             </div>
