@@ -21,54 +21,59 @@ function($stateProvider, $urlRouterProvider) {
     var o = {
         results: [
             {
-                title: "Sedan",
+                title: "You are a Sedan!",
                 imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                description: "Yep."
             },
             {
-                title: "Minivan",
+                title: "You are a Minivan!",
                 imgUrl: "https://cars.usnews.com/dims4/USNEWS/a26bd14/2147483647/resize/640x420%3E/format/jpeg/quality/85/?url=https%3A%2F%2Fcars.usnews.com%2Fstatic%2Fimages%2Farticle%2F201704%2F126811%2F6_CAR15SedonaSoulEV298_640x420.jpg",
-                description: "Hello There"
+                description: "But what about the droid attack on the soccer moms?"
             },
             {
-                title: "Sudan",
-                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                title: "You are an SUV!",
+                imgUrl: "http://st.motortrend.com/uploads/sites/5/2016/08/Toyota-4Runner-TRD-Pro-front-three-quarter-01.jpg",
+                description: "My allegiance is to the republic! To democracy!"
             },
             {
-                title: "Sudan",
-                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                title: "You are a Pickup Truck!",
+                imgUrl: "https://i.pinimg.com/736x/06/d9/97/06d9975932399c0e83c94957fc980c52.jpg",
+                description: "I must be Frank your majesty."
             },
             {
-                title: "Sudan",
-                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                title: "You are a Motorcycle!",
+                imgUrl: "http://images.mcn.bauercdn.com/pagefiles/487776/ducati_1098-photo.jpg",
+                description: "YOUR new empire?"
             },
             {
-                title: "Sudan",
-                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                title: "You are a Sports Car!",
+                imgUrl: "http://2p2bboli8d61fqhjiqzb8p1a.wpengine.netdna-cdn.com/wp-content/uploads/2017/02/audi-r8-vossen-2917-main.jpg",
+                description: "Don't try it!"
             },
             {
-                title: "Sudan",
-                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                title: "You are a Luxury Car!",
+                imgUrl: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/mercedes-benz-cls_1_0.jpg?itok=LwID0QnI",
+                description: "You are a bold one."
             },
             {
-                title: "Sudan",
-                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                title: "You are a School Bus!",
+                imgUrl: "https://lh3.googleusercontent.com/SULJh730ZFqrL_rNFzPK-TTunzSG8IyzfwLTjr_vGZk0EwebW0k7yMT4FNUSj0F0Yc18UGfsVRVfG3NIdA=h1264",
+                description: "This is where the fun begins."
             },
             {
-                title: "Sudan",
-                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                title: "You are a Semi Truck!",
+                imgUrl: "http://thenewswheel.com/wp-content/uploads/2016/01/Movie-Optimus-Prime-truck-auction.png",
+                description: "I'll try being Optimus Prime, that's a good trick."
             },
             {
-                title: "Sudan",
-                imgUrl: "https://i2.wp.com/bestsellingcarsblog.com/wp-content/uploads/2010/12/hyundai-atos-sudan-2010.jpg",
-                description: "Hello There"
+                title: "You are a MONSTER TRUCK!!",
+                imgUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Grave_digger_(truck).jpg",
+                description: "Is that legal? I will make it legal."
+            },
+            {
+                title: "You are the Perfect Car",
+                imgUrl: "http://i.dailymail.co.uk/i/pix/2012/12/11/article-2246653-1676ABEE000005DC-485_634x724.jpg",
+                description: "You are the ideal car. You may not like it, but this is what peak performance looks like."
             }
         ]
     };
